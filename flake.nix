@@ -2,17 +2,17 @@
   description = "Zen Browser";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };
 
   outputs = { self, nixpkgs }:
     let
       system = "x86_64-linux";
-      version = "1.7.6b";
+      version = "1.11.2b";
       downloadUrl = {
         "specific" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-x86_64.tar.xz";
-	  sha256 = "sha256:19v6n0a1j63i8i7c9615lh1fmbz8jakwyiy11imc9vbq1n6z0nm9";
+	  sha256 = "0azgzs3la1hpk7lnnvi8bc7m5m8isrgh5yqg9z8qvlszs5n9bmnx";
 	};
 	"generic" = {
 	  url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-generic.tar.bz2";
